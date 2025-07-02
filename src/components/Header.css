@@ -1,0 +1,65 @@
+/* Header.css */
+
+.libas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-section {
+  flex: 1;
+}
+
+.libas-logo {
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.icon-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.icon-section a {
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.icon-section a:hover {
+  transform: scale(1.1);
+}
+.nav-links a.active {
+  color: #000;
+  font-weight: 600;
+  border-bottom: 2px solid #000;
+  padding-bottom: 2px;
+}

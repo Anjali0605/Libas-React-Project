@@ -1,0 +1,145 @@
+/* CartPage.css */
+
+.cart-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.cart-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cart-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Cart Items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cart-item img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  
+}
+
+.item-details p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.quantity-control input {
+  width: 60px;
+  padding: 6px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.remove-btn {
+  background-color: transparent;
+  border: 1px solid #d9534f;
+  color: #d9534f;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+/* Summary */
+.cart-summary {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cart-summary h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.checkout-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-details {
+    width: 100%;
+  }
+}
+.quantity-control input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.quantity-control input:focus {
+  outline: none;
+  border-color: #000;
+}
+.cart-item img {
+  max-width: 100%;
+  height: auto;
+}

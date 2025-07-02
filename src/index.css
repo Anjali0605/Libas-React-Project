@@ -1,13 +1,48 @@
-body {
+/* index.css */
+
+/* Reset some defaults */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Enable smooth scrolling for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set base font */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Default link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove list styles globally */
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  background: none;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  display: block;
 }

@@ -1,0 +1,107 @@
+/* CheckoutPage.css */
+
+.checkout-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.checkout-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.checkout-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.checkout-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Shipping Form */
+.shipping-form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shipping-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.shipping-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.order-btn {
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #333;
+}
+
+/* Order Summary */
+.order-summary {
+  flex: 1 1 400px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.order-summary h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.summary-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.order-summary h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkout-sections {
+    flex-direction: column;
+  }
+
+  .shipping-form,
+  .order-summary {
+    width: 100%;
+  }
+}
