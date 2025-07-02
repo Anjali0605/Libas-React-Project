@@ -2,8 +2,7 @@
 
 This project is developed by **Anjali Budhwar**. It is a modern and responsive ecommerce web application built using React JS to showcase and sell women's traditional and modern wear online.
 
-🔗 **Live Demo:** [View on Netlify](https://your-netlify-deployment-link.netlify.app)  
-*(Replace the above link with your actual Netlify deployment URL)*
+🔗 **Live Demo:** [View on Netlify](https://libas-react.netlify.app/)  
 
 ---
 
